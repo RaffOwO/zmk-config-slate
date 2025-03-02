@@ -1,8 +1,4 @@
-#include "slate.dtsi"
-
-&default_transform { 
-    col-offset = <6>;
-}; 
+#include "slate.dtsi" 
 
 &kscan0 {
     col-gpios
@@ -13,4 +9,8 @@
         , <&pro_micro 16 GPIO_ACTIVE_HIGH>
         , <&pro_micro 10 GPIO_ACTIVE_HIGH>
         ;
+};
+
+&left_encoder {
+    status = "okay";
 };
