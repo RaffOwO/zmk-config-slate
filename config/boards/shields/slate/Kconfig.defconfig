@@ -23,7 +23,5 @@ if SHIELD_APT_LEFT || SHIELD_APT_RIGHT
 	# Encoder
 	config EC11
 		default y
-	config EC11_TRIGGER_GLOBAL_THREAD
-		default y
 
 endif
