@@ -10,7 +10,7 @@
 		compatible = "zmk,matrix-transform";
 		columns = <12>;
 		rows = <5>;
-		// | EC01 | SW2  | SW3  | SW4  | SW5  | SW6  |        | SW7  | SW8  | SW9  | SW10 | SW11 | EC02 |
+		// | SW01 | SW02 | SW03 | SW04 | SW05 | SW06 |        | SW07 | SW08 | SW09 | SW10 | SW11 | EC02 |
 		// | SW13 | SW14 | SW15 | SW16 | SW17 | SW18 |        | SW19 | SW20 | SW21 | SW22 | SW23 | SW24 |
 		// | SW25 | SW26 | SW27 | SW28 | SW29 | SW30 |        | SW31 | SW32 | SW33 | SW34 | SW35 | SW36 |
 		// | SW37 | SW38 | SW39 | SW40 | SW41 | SW42 |        | SW43 | SW44 | SW45 | SW46 | SW47 | SW48 |
@@ -38,27 +38,5 @@
 		, <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
 		;
 	};
-
-	left_encoder: encoder_left {
-        compatible = "alps,ec11";
-        a-gpios = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
-        status = "disabled";
-    };
-
-	right_encoder: encoder_right {
-        compatible = "alps,ec11";
-        a-gpios = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
-        status = "disabled";
-    };
-	
-	sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <20>;
-    };
 
 };
