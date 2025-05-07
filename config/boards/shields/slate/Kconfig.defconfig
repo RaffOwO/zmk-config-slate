@@ -1,4 +1,4 @@
-if SHIELD_APT_LEFT
+if SHIELD_SLATE_LEFT
 
 	config ZMK_KEYBOARD_NAME
 		default "Slate Left"
@@ -8,14 +8,14 @@ if SHIELD_APT_LEFT
 
 endif
 
-if SHIELD_APT_RIGHT
+if SHIELD_SLATE_RIGHT
 
 	config ZMK_KEYBOARD_NAME
 		default "Slate Right"
 		
 endif
 
-if SHIELD_APT_LEFT || SHIELD_APT_RIGHT
+if SHIELD_SLATE_LEFT || SHIELD_SLATE_RIGHT
 
 	config ZMK_SPLIT
 		default y
