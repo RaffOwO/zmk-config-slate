@@ -22,3 +22,5 @@ include:
     shield: slate_left
   - board: nice_nano_v2
     shield: slate_right
+  - board: nice_nano_v2
+    shield: settings_reset
