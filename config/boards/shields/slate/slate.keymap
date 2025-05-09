@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define LWR 1
-#define RSE 2
+#define RSE 1
+#define LWR 2
 
 / {
     keymap {
