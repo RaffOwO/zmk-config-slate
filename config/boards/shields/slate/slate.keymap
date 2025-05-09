@@ -8,18 +8,18 @@
 #define LWR 2
 
 /* tap-hold combos */
-#define ENT_SHIFT   &mt LSHFT  ENTER       /* tap=Enter, hold=Shift */
-#define DEL_RSE     &lt  RSE    DEL         /* tap=Delete, hold=Raise */
+#define ENT_SHIFT   mt LSHFT  ENTER       /* tap=Enter, hold=Shift */
+#define DEL_RSE     lt  RSE    DEL         /* tap=Delete, hold=Raise */
 
 /* other shortcuts */
-#define U_ENABLE    &out OUT_USB
-#define B_ENABLE    &out OUT_BLE
-#define B_CLEAR     &bt  BT_CLR
-#define B_CONN1     &bt  BT_SEL 0
-#define B_CONN2     &bt  BT_SEL 1
-#define B_CONN3     &bt  BT_SEL 2
-#define B_CONN4     &bt  BT_SEL 3
-#define B_CONN5     &bt  BT_SEL 4
+#define U_ENABLE    out OUT_USB
+#define B_ENABLE    out OUT_BLE
+#define B_CLEAR     bt  BT_CLR
+#define B_CONN1     bt  BT_SEL 0
+#define B_CONN2     bt  BT_SEL 1
+#define B_CONN3     bt  BT_SEL 2
+#define B_CONN4     bt  BT_SEL 3
+#define B_CONN5     bt  BT_SEL 4
 
 / {
     keymap {
