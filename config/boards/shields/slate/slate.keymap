@@ -32,6 +32,7 @@
                 &kp TAB     &kp A     &kp S     &kp D     &kp F         &kp G                   &kp H      &kp J      &kp K      &kp L      &entshift   &kp PG_UP
                 &kp LSHFT   &kp BSLH  &kp Z     &kp X     &kp C         &kp V                   &kp B      &kp N      &kp M      &kp COMMA  &kp UP      &kp PG_DN
                 &kp LCTRL   &kp LGUI  &kp LALT  &mo LWR   &delrse       &kp SPACE               &kp BSPC   &delrse    &mo LWR    &kp LEFT   &kp DOWN    &kp RIGHT
+            >;
         };
         
         raise_layer {
