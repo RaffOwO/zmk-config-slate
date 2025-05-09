@@ -16,7 +16,7 @@
                 &kp GRAVE   &kp N1    &kp N2    &kp N3    &kp N4      &kp N5                  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp HOME
                 &kp ESC     &kp Q     &kp W     &kp E     &kp R       &kp T                   &kp Y      &kp U      &kp I      &kp O      &kp P      &kp END
                 &kp TAB     &kp A     &kp S     &kp D     &kp F       &kp G                   &kp H      &kp J      &kp K      &kp L      &kp ENTER  &kp PG_UP
-                &kp LSHFT   &kp SLASH &kp Z     &kp X     &kp C       &kp V                   &kp B      &kp N      &kp M      &kp COMMA  &kp UP     &kp PG_DN
+                &kp LSHFT   &kp BSLH  &kp Z     &kp X     &kp C       &kp V                   &kp B      &kp N      &kp M      &kp COMMA  &kp UP     &kp PG_DN
                 &kp LCTRL   &kp LGUI  &kp LALT  &mo LWR   &mo RSE     &kp SPACE               &kp BSPC   &kp DEL    &mo LWR    &kp LEFT   &kp DOWN   &kp RIGHT
             >;
         };
@@ -24,9 +24,9 @@
         raise_layer {
             bindings = <
                 &kp F11     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                 &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F12
-                &kp ESC     &kp APOS   &kp DQT    &kp BSLH   &kp GRAVE  &kp TILDE              &kp LBKT   &kp LT     &kp EQL    &kp RT     &kp RBKT   &kp BSLH
+                &kp ESC     &kp APOS   &kp CARET  &kp BSLH   &kp GRAVE  &kp TILDE              &kp LBKT   &kp LT     &kp EQL    &kp GT     &kp RBKT   &kp FSLH
                 &kp TAB     &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT              &kp LBRC   &kp LPAR   &kp COLON  &kp LPAR   &kp RBRC   &kp MINUS
-                &kp LSHFT   &kp FSLH   &kp AMPS   &kp C      &kp V      &trans                 &kp DOT    &kp COMMA  &kp SEMI   &kp UNDER  &kp DOWN   &kp PG_DN
+                &kp LSHFT   &kp FSLH   &kp PIPE   &trans     &trans     &trans                 &kp DOT    &kp COMMA  &kp SEMI   &kp UNDER  &kp DOWN   &kp PG_DN
                 &kp LCTRL   &kp LGUI   &kp LALT   &trans     &mo RSE    &kp SPACE              &kp BSPC   &kp DEL    &mo LWR    &kp LEFT   &kp DOWN   &kp RIGHT
             >;
         };
@@ -36,7 +36,7 @@
                 &kp ESC     &out OUT_BLE   &bt BT_CLR     &trans         &trans         &out OUT_USB           &kp LBKT   &kp LT     &kp EQL    &kp RBKT   &kp PIPE   &kp BSLH
                 &kp F11     &kp F1         &kp F2         &kp F3         &kp F4         &kp F5                 &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F12
                 &kp TAB     &kp N1         &kp N2         &kp N3         &kp N4         &kp N5                 &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp UP
-                &kp LSHFT   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &none                  &kp DOT    &kp COMMA  &kp DOT    &kp MINUS  &kp DOWN   &kp PG_DN
+                &kp LSHFT   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &none                  &kp DOT    &kp COMMA  &kp SEMI   &kp UNDER  &kp DOWN   &kp PG_DN
                 &kp LCTRL   &kp LGUI       &kp LALT       &trans         &mo RSE        &kp SPACE              &kp BSPC   &kp DEL    &mo LWR    &kp LEFT   &kp DOWN   &kp RIGHT
             >;
         };
