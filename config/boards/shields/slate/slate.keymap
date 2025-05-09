@@ -9,16 +9,16 @@
 
 / {
     aliases {
-        entshift   = &mt LSHFT ENTER
-        delrse     = &mt DEL ENTER
-        u_enable   = &out OUT_USB
-        b_enable   = &out OUT_BLE
-        b_clear    = &bt BT_CLR
-        b_conn_1   = &bt BT_SEL 0
-        b_conn_2   = &bt BT_SEL 1
-        b_conn_3   = &bt BT_SEL 2
-        b_conn_4   = &bt BT_SEL 3
-        b_conn_4   = &bt BT_SEL 4
+        entshift   = &mt LSHFT ENTER;
+        delrse     = &mt RSE DEL;
+        u_enable   = &out OUT_USB;
+        b_enable   = &out OUT_BLE;
+        b_clear    = &bt BT_CLR;
+        b_conn_1   = &bt BT_SEL 0;
+        b_conn_2   = &bt BT_SEL 1;
+        b_conn_3   = &bt BT_SEL 2;
+        b_conn_4   = &bt BT_SEL 3;
+        b_conn_5   = &bt BT_SEL 4;
     };
 };
 
@@ -28,11 +28,11 @@
         
         default_layer {
             bindings = <
-                &kp GRAVE   &kp N1    &kp N2    &kp N3    &kp N4      &kp N5                  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      &kp HOME
-                &kp ESC     &kp Q     &kp W     &kp E     &kp R       &kp T                   &kp Y      &kp U      &kp I      &kp O      &kp P       &kp END
-                &kp TAB     &kp A     &kp S     &kp D     &kp F       &kp G                   &kp H      &kp J      &kp K      &kp L      &entshift   &kp PG_UP
-                &kp LSHFT   &kp BSLH  &kp Z     &kp X     &kp C       &kp V                   &kp B      &kp N      &kp M      &kp COMMA  &kp UP      &kp PG_DN
-                &kp LCTRL   &kp LGUI  &kp LALT  &mo LWR   &delrse     &kp SPACE               &kp BSPC   &delrse    &mo LWR    &kp LEFT   &kp DOWN    &kp RIGHT
+                &kp GRAVE   &kp N1    &kp N2    &kp N3    &kp N4        &kp N5                  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0      &kp HOME
+                &kp ESC     &kp Q     &kp W     &kp E     &kp R         &kp T                   &kp Y      &kp U      &kp I      &kp O      &kp P       &kp END
+                &kp TAB     &kp A     &kp S     &kp D     &kp F         &kp G                   &kp H      &kp J      &kp K      &kp L      &entshift   &kp PG_UP
+                &kp LSHFT   &kp BSLH  &kp Z     &kp X     &kp C         &kp V                   &kp B      &kp N      &kp M      &kp COMMA  &kp UP      &kp PG_DN
+                &kp LCTRL   &kp LGUI  &kp LALT  &mo LWR   &delrse       &kp SPACE               &kp BSPC   &delrse    &mo LWR    &kp LEFT   &kp DOWN    &kp RIGHT
         };
         
         raise_layer {
@@ -41,7 +41,7 @@
                 &kp ESC     &kp APOS   &kp CARET  &kp BSLH   &kp GRAVE  &kp TILDE              &kp LBKT   &kp LT     &kp EQL    &kp GT     &kp RBKT   &kp FSLH
                 &kp TAB     &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT              &kp LBRC   &kp LPAR   &kp COLON  &kp RPAR   &kp RBRC   &kp MINUS
                 &kp LSHFT   &kp FSLH   &kp PIPE   &kp PLUS   &kp STAR   &kp MINUS              &kp COMMA  &kp DOT    &kp SEMI   &kp UNDER  &kp UP     &kp PG_DN
-                &kp LCTRL   &kp LGUI   &kp LALT   &trans     &trans    &kp SPACE               &kp BSPC   &trans    &mo LWR    &kp LEFT   &kp DOWN   &kp RIGHT
+                &kp LCTRL   &kp LGUI   &kp LALT   &trans     &trans     &kp SPACE              &kp BSPC   &trans    &mo LWR    &kp LEFT   &kp DOWN   &kp RIGHT
             >;
         };
 
@@ -50,8 +50,8 @@
                 &kp ESC     &b_enable  &b_clear   &trans     &trans     &u_enable              &kp LBKT   &kp LT     &kp EQL    &kp RBKT   &kp PIPE   &kp BSLH
                 &kp F11     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                 &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F12
                 &kp TAB     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                 &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp UP
-                &kp LSHFT   &b_conn_1  &b_conn_2  &b_conn_3  &b_conn_4  &b_conn_4              &kp COMMA  &kp DOT    &kp SEMI   &kp UNDER  &kp DOWN   &kp PG_DN
-                &kp LCTRL   &kp LGUI   &kp LALT   &trans     &trans    &kp SPACE               &kp BSPC   &trans    &mo LWR    &kp LEFT   &kp DOWN   &kp RIGHT
+                &kp LSHFT   &b_conn_1  &b_conn_2  &b_conn_3  &b_conn_4  &b_conn_5              &kp COMMA  &kp DOT    &kp SEMI   &kp UNDER  &kp DOWN   &kp PG_DN
+                &kp LCTRL   &kp LGUI   &kp LALT   &trans     &trans     &kp SPACE              &kp BSPC   &trans    &mo LWR    &kp LEFT   &kp DOWN   &kp RIGHT
             >;
         };
     };
