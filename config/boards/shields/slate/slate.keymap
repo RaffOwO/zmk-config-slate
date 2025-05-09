@@ -9,16 +9,16 @@
 
 / {
     aliases {
-        entshift   = &mt LSHFT ENTER;
-        delrse     = &mt DEL ENTER;
-        u_enable   = &out OUT_USB;
-        b_enable   = &out OUT_BLE;
-        b_clear    = &bt BT_CLR;
-        b_conn_1   = &bt BT_SEL 0;
-        b_conn_2   = &bt BT_SEL 1;
-        b_conn_3   = &bt BT_SEL 2;
-        b_conn_4   = &bt BT_SEL 3;
-        b_conn_4   = &bt BT_SEL 4;
+        entshift   = &mt LSHFT ENTER
+        delrse     = &mt DEL ENTER
+        u_enable   = &out OUT_USB
+        b_enable   = &out OUT_BLE
+        b_clear    = &bt BT_CLR
+        b_conn_1   = &bt BT_SEL 0
+        b_conn_2   = &bt BT_SEL 1
+        b_conn_3   = &bt BT_SEL 2
+        b_conn_4   = &bt BT_SEL 3
+        b_conn_4   = &bt BT_SEL 4
     };
 };
 
