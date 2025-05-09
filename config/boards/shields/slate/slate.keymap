@@ -10,7 +10,7 @@
 / {
     aliases {
         entshift   = &mt LSHFT ENTER;
-        delrse     = &mt RSE DEL;
+        delrse     = &lt 1 DEL;
         u_enable   = &out OUT_USB;
         b_enable   = &out OUT_BLE;
         b_clear    = &bt BT_CLR;
