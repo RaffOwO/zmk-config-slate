@@ -8,13 +8,6 @@ if SHIELD_SLATE_LEFT
 
 endif
 
-if SHIELD_SLATE_RIGHT
-
-	config ZMK_KEYBOARD_NAME
-		default "Slate Right"
-		
-endif
-
 if SHIELD_SLATE_LEFT || SHIELD_SLATE_RIGHT
 
 	config ZMK_SPLIT
